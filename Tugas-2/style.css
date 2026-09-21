@@ -1,0 +1,236 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #174ea6;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0d3b7a;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #174ea6;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   LIST
+========================= */
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #174ea6;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+tr:hover {
+    background-color: #e8f0fe;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #174ea6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    background-color: #174ea6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d3b7a;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #12345b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
