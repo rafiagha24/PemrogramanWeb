@@ -2,84 +2,138 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Kontak - SMA Insan Cendekia Mandiri Boarding School Sidoarjo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SMA Insan Cendekia Mandiri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>SMA Insan Cendekia Mandiri Boarding School Sidoarjo</h1>
+        <div class="header-container">
 
-        <img src="logo.png" alt="Logo SMA Insan Cendekia Mandiri Boarding School Sidoarjo" width="150">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo Sekolah">
+                <div>
+                    <h1>SMA Insan Cendekia Mandiri</h1>
+                    <span>Boarding School Sidoarjo</span>
+                </div>
+            </a>
 
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="jurusan.html">Jurusan</a> |
-            <a href="kontak.html">Kontak</a>
-        </nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jurusan.html">Jurusan</a>
+                <a href="kontak.html" class="active">Kontak</a>
+            </nav>
+
+        </div>
     </header>
 
-    <hr>
+    <main>
 
-    <!-- Informasi Kontak -->
-    <section>
-        <h2>Kontak Sekolah</h2>
+        <section class="page-title">
+            <h2>Kontak</h2>
+            <p>Hubungi SMA Insan Cendekia Mandiri untuk informasi lebih lanjut.</p>
+        </section>
 
-        <p>
-            Jika memiliki pertanyaan atau membutuhkan informasi lebih lanjut,
-            silakan menghubungi kami melalui informasi berikut:
-        </p>
+        <section class="content contact-section">
 
-        <p>
-            <strong>Alamat:</strong><br>
-            Jl. Sarirogo No.1, Sari Rogo, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
-        </p>
+            <div class="contact-info">
 
-        <p>
-            <strong>Email:</strong><br>
-            info@sekolahicm.sch.id
-        </p>
+                <h2>Informasi Sekolah</h2>
 
-        <p>
-            <strong>Telepon:</strong><br>
-            (031) 99700528
-        </p>
-    </section>
+                <div class="info-item">
+                    <h3>Alamat</h3>
+                    <p>
+                        Jl. Sarirogo No.1, Sari Rogo, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
+                    </p>
+                </div>
 
-    <hr>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>
+                        info@sekolahicm.sch.id
+                    </p>
+                </div>
 
-    <section>
-        <h2>Form Kontak</h2>
+                <div class="info-item">
+                    <h3>Telepon</h3>
+                    <p>
+                        0895-2337-5742
+                    </p>
+                </div>
 
-        <form>
+            </div>
 
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama">
+            <div class="contact-form">
 
-            <br><br>
+                <h2>Kirim Pesan</h2>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email">
+                <form>
 
-            <br><br>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama"
+                            required
+                        >
+                    </div>
 
-            <label for="pesan">Pesan:</label><br>
-            <textarea id="pesan" name="pesan" rows="6" cols="40"></textarea>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Masukkan email"
+                            required
+                        >
+                    </div>
 
-            <br><br>
+                    
 
-            <button type="submit">Kirim Pesan</button>
+                    <div class="form-group">
+                        <label for="kategori">Pilih Kategori</label>
 
-        </form>
-    </section>
+                        <select id="kategori" name="kategori">
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="saran">Saran</option>
+                            <option value="kritik">Kritik</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    
 
-    <hr>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea
+                            id="pesan"
+                            name="pesan"
+                            rows="6"
+                            placeholder="Tulis pesan"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Kirim Pesan
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>&2026 SMA Insan Cendekia Mandiri Boarding School Sidoarjo. All Rights Reserved.</p>
+        <p>
+            &copy; 2026 SMA Insan Cendekia Mandiri Boarding School Sidoarjo
+        </p>
     </footer>
 
 </body>

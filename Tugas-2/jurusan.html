@@ -2,94 +2,132 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Jurusan - SMA Insan Cendekia Mandiri Boarding School Sidoarjo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan - SMA Insan Cendekia Mandiri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>SMA Insan Cendekia Mandiri Boarding School Sidoarjo</h1>
+        <div class="header-container">
 
-        <img src="logo.png" alt="Logo SMA Insan Cendekia Mandiri Boarding School Sidoarjo" width="150">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Logo Sekolah">
+                <div>
+                    <h1>SMA Insan Cendekia Mandiri</h1>
+                    <span>Boarding School Sidoarjo</span>
+                </div>
+            </a>
 
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="jurusan.html">Jurusan</a> |
-            <a href="kontak.html">Kontak</a>
-        </nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jurusan.html" class="active">Jurusan</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+        </div>
     </header>
 
-    <hr>
+    <main>
 
-    <section>
-        <h2>Jurusan yang Tersedia</h2>
+        <section class="page-title">
+            <h2>Jurusan</h2>
+            <p>Program pendidikan yang tersedia di SMA Insan Cendekia Mandiri.</p>
+        </section>
 
-        <p>
-            SMA Insan Cendekia Mandiri Boarding School Sidoarjo menggunakan kurikulum K13 sehingga penjurusan dibagi menjadi 2 kelas mulai tahun ke-2 yaitu IPA dan IPS
-        </p>
+        <section class="content">
 
-        <ul>
-            <li>
-                <h2>IPA</h2>
-                <p>
-                    Jurusan IPA menyediakan beberapa mata pelajaran khusus seperti:
-                </p>
+            <div class="jurusan-list">
 
-                <ul>
-                    <li>Biologi</li>
-                    <li>Kimia</li>
-                    <li>Fisika</li>
-                </ul>
-            </li>
+                <div class="jurusan-card">
+                    <h2>Ilmu Pengetahuan Alam</h2>
+                    <p>
+                        Jurusan Ilmu Pengetahuan Alam mempelajari berbagai
+                        bidang ilmu seperti matematika, fisika, kimia, dan biologi.
+                        Program ini membantu siswa mengembangkan kemampuan
+                        berpikir logis dan ilmiah.
+                    </p>
 
-            <li>
-                <h2>IPS</h2>
-                <p>
-                    Jurusan IPS menyediakan beberapa mata pelajaran khusus seperti:
-                </p>
+                    <ul>
+                        <li>Matematika</li>
+                        <li>Fisika</li>
+                        <li>Kimia</li>
+                        <li>Biologi</li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li>Sosiologi</li>
-                    <li>Ekonomi</li>
-                    <li>Geografi</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+                <div class="jurusan-card">
+                    <h2>Ilmu Pengetahuan Sosial</h2>
+                    <p>
+                        Jurusan Ilmu Pengetahuan Sosial mempelajari berbagai
+                        aspek kehidupan masyarakat, ekonomi, sejarah, dan geografi.
+                        Program ini membantu siswa memahami lingkungan sosial
+                        dan perkembangan masyarakat.
+                    </p>
 
-    <hr>
+                    <ul>
+                        <li>Ekonomi</li>
+                        <li>Sejarah</li>
+                        <li>Geografi</li>
+                        <li>Sosiologi</li>
+                    </ul>
+                </div>
 
-    <section>
-        <h2>Jumlah Siswa Tiap Jurusan</h2>
+            </div>
 
-        <table border="1">
-            <tr>
-                <th>No</th>
-                <th>Jurusan</th>
-                <th>Jumlah Siswa</th>
-            </tr>
+        </section>
 
-            <tr>
-                <td>1</td>
-                <td>IPA</td>
-                <td>120</td>
-            </tr>
+        <section class="content">
 
-            <tr>
-                <td>2</td>
-                <td>IPS</td>
-                <td>100</td>
-            </tr>
-        </table>
-    </section>
+            <div class="section-title">
+                <h2>Jumlah Siswa</h2>
+                <p>Data jumlah siswa berdasarkan jurusan.</p>
+            </div>
 
-    <hr>
+            <div class="table-wrapper">
 
-    <!-- Footer -->
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jurusan</th>
+                            <th>Jumlah Siswa</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ilmu Pengetahuan Alam</td>
+                            <td>120</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Ilmu Pengetahuan Sosial</td>
+                            <td>90</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><strong>Total</strong></td>
+                            <td><strong>210</strong></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
     <footer>
-        <p>2026 SMA Insan Cendekia Mandiri Boarding School Sidoarjo. All Rights Reserved.</p>
+        <p>
+            &copy; 2026 SMA Insan Cendekia Mandiri Boarding School Sidoarjo
+        </p>
     </footer>
 
 </body>
