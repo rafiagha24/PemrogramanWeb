@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Login Petugas - LibraryReg</title>
+
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      .card-login {
+        border: none;
+        border-radius: 12px;
+      }
+      .card-login .card-header {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+          LibraryReg
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-wrapper my-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            
+            <div class="card card-login shadow-lg">
+              <div class="card-header bg-primary text-white text-center py-4">
+                <div class="mb-2">
+                  <i class="fas fa-user-shield fa-2x"></i>
+                </div>
+                <h4 class="font-weight-bold mb-0">Login Petugas</h4>
+                <small class="text-white-50">Portal Pengelolaan Keanggotaan Perpustakaan</small>
+              </div>
+
+              <div class="card-body p-4">
+                
+                <div class="alert alert-info py-2 px-3 small mb-4" role="alert">
+                  <strong>Akun Demo Petugas:</strong><br>
+                  Username / NRP: <code>admin</code><br>
+                  Password: <code>admin123</code>
+                </div>
+
+                <div id="alertContainer"></div>
+
+                <form id="loginForm" novalidate>
+                  
+                  <div class="form-group mb-3">
+                    <label for="username" class="font-weight-bold">Username / NRP</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-white text-primary"><i class="fas fa-user"></i></span>
+                      </div>
+                      <input type="text" class="form-control" id="username" placeholder="Masukkan username atau NRP" required>
+                      <div class="invalid-feedback">Username atau NRP wajib diisi.</div>
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="password" class="font-weight-bold">Password</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-white text-primary"><i class="fas fa-lock"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="password" placeholder="Masukkan password" required>
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                          <i class="fas fa-eye" id="toggleIcon"></i>
+                        </button>
+                      </div>
+                      <div class="invalid-feedback">Password wajib diisi.</div>
+                    </div>
+                  </div>
+
+                  <div class="form-group d-flex justify-content-between align-items-center mb-4">
+                    <a href="#" class="small text-primary" id="btnForgot">Lupa Password?</a>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block btn-lg font-weight-bold shadow-sm">
+                    Masuk
+                  </button>
+
+                </form>
+
+              </div>
+              <div class="card-footer bg-white text-center py-3 border-top-0 rounded-bottom">
+                <small class="text-muted">Kembali ke <a href="index.html" class="text-primary font-weight-bold">Halaman Utama</a></small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">
+              LibraryReg
+            </h5>
+            <p class="text-light" style="font-size: 14px;">
+              Layanan pendaftaran keanggotaan perpustakaan digital berbasis web. Bebas antre, cepat, dan mudah diakses dari mana saja.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Link</h5>
+            <p><a href="index.html" class="text-white text-decoration-none">Beranda</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Tentang Kami</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Layanan</a></p>
+            <p><a href="register.html" class="text-white text-decoration-none">Pendaftaran</a></p>
+          </div>
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Jam Layanan</h5>
+            <p class="mb-2"><strong>Senin - Sabtu: 08.00 - 16.00 WIB</strong></p>
+            <p class="mb-0"><strong>Minggu & Hari Libur: Tutup</strong></p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Kontak Kami</h5>
+            <p>perpustakaan@univ.ac.id</p>
+            <p>(031) 1234-5678</p>
+            <p>+62 812-3456-7890</p>
+          </div>
+
+        </div>
+
+        <hr class="my-4 border-white">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left mb-0 text-white-50">
+              © 2026 <strong>LibraryReg</strong>. Hak Cipta Dilindungi Undang-Undang.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- LIBRARY JAVASCRIPT & BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- LOGIKA JAVASCRIPT UNTUK LOGIN & REDIRECT -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loginForm = document.getElementById('loginForm');
+        const alertContainer = document.getElementById('alertContainer');
+        const togglePasswordBtn = document.getElementById('togglePassword');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const passwordInput = document.getElementById('password');
+        const btnForgot = document.getElementById('btnForgot');
+
+        togglePasswordBtn.addEventListener('click', function() {
+          if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            toggleIcon.classList.remove('fa-eye');
+            toggleIcon.classList.add('fa-eye-slash');
+          } else {
+            passwordInput.type = 'password';
+            toggleIcon.classList.remove('fa-eye-slash');
+            toggleIcon.classList.add('fa-eye');
+          }
+        });
+
+        btnForgot.addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('Gunakan akun demo: Username "admin" dan Password "admin123"');
+        });
+
+        loginForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alertContainer.innerHTML = '';
+
+          const username = document.getElementById('username').value.trim();
+          const password = passwordInput.value.trim();
+
+          if (!loginForm.checkValidity()) {
+            loginForm.classList.add('was-validated');
+            return;
+          }
+
+          if (username === 'admin' && password === 'admin123') {
+            sessionStorage.setItem('isLoggedIn', 'true');
+            sessionStorage.setItem('adminUser', username);
+
+            alertContainer.innerHTML = `
+              <div class="alert alert-success" role="alert">
+                <i class="fas fa-check-circle mr-2"></i>Login berhasil! Mengalihkan ke Halaman Pengelolaan...
+              </div>
+            `;
+
+            setTimeout(function() {
+              window.location.href = 'admin.html';
+            }, 1000);
+
+          } else {
+            alertContainer.innerHTML = `
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-triangle mr-2"></i>Username atau Password salah!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            `;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
